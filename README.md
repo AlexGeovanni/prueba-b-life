@@ -1,4 +1,10 @@
-# React + TypeScript + Vite
+## Tecnologias 
+- React
+- Typescript
+- Tailwindcss / para los estilos
+- React-slick | slick-carousel / para crear los sliders de los productos
+
+## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
