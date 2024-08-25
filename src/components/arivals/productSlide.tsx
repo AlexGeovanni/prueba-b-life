@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import BtnAdd from "./btn";
+import FavoriteIcon from "../icons/favorite";
 
 interface Props {
   refSlide: React.RefObject<Slider>;
@@ -69,7 +70,7 @@ export default function ProductSlide({ refSlide }: Props) {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.1,
           slidesToScroll: 1,
           initialSlide: 1,
         },
@@ -77,7 +78,7 @@ export default function ProductSlide({ refSlide }: Props) {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.1,
           slidesToScroll: 1,
         },
       },
@@ -85,11 +86,16 @@ export default function ProductSlide({ refSlide }: Props) {
   };
   return (
     <div className="slider-container overflow-hidden  ">
-      <Slider ref={refSlide} {...settings}>
+      <Slider ref={refSlide} {...settings} >
         {data.map((product, i) => (
-          <div key={i} className=" max-w-[402px] cursor-pointer "  >
+          <div key={i} className=" max-w-[402px] pt-4 lg:pt-0 cursor-pointer  relative"  >
             <div className="md:p-6 p-[42px] lg:p-[42px] ">
               <div className="bg-slate-600 m-auto h-[267px] IMAGEN CONTENEDOR "></div>
+              <span className="bg-black border border-white inline-block p-2 rounded-full 
+              absolute top-0 right-6 md:-top-2 md:right-1 lg:-top-2 lg:right-6 z-50 ">
+                  <FavoriteIcon />
+              </span>
+            
             </div>
             <div className="flex justify-between mt-5">
               <span className="text-base lg:text-lg font-bold">

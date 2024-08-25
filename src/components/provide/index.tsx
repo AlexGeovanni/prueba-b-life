@@ -9,7 +9,7 @@ export default function ProvideService() {
         <div className="px-4 lg:px-[78px]">
           <div className=" mb-20">
             <h2 className="text-center text-5xl lg:text-7xl font-extrabold">
-              What <span className="text-violet-600">we</span> provide?
+              What <span className="text-[#5E1EE5]">we</span> provide?
             </h2>
           </div>
           <div className="grid grid-cols-12 lg:grid-cols-7 gap-2 gap-y-10">

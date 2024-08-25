@@ -16,7 +16,7 @@ export default function NewArrivalsSection() {
       <div className="ps-4 lg:ps-28">
         <div className="p-4 lg:pe-28 flex  justify-between items-center">
           <h2 className="text-4xl lg:text-5xl font-bold text-balance">
-            New <span className="text-violet-600">arrival</span> for you
+            New <span className="text-[#5E1EE5]">arrival</span> for you
           </h2>
           <ControllerSlide refSlide={refSlide} />
         </div>

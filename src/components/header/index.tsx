@@ -1,3 +1,5 @@
+import {motion} from "framer-motion"
+
 import { useState } from "react";
 import EllipseOne from "../icons/ellipse1";
 import SphereOne from "../icons/sphere1";
@@ -14,7 +16,19 @@ export default function Header() {
 
   return (
     <header className="">
-      <nav className="drop-shadow-xl lg:drop-shadow-none bg-gray-50 ">
+      <motion.nav 
+      className="drop-shadow-xl lg:drop-shadow-none bg-gray-50 "
+      initial={{
+        opacity: 0,
+      }}
+      animate={{
+        opacity: 1,
+        transition: {
+           duration: 1,
+            ease: "easeInOut",
+          },
+      }}
+      >
         <div className="px-4 lg:px-28 py-4 flex flex-wrap items-center justify-between ">
           <a href="#" className="relative " aria-label="Logo page" >
             <span className="absolute -top-3 -right-3">
@@ -35,7 +49,7 @@ export default function Header() {
           </div>
           <ControllUserBtn classC={"hidden lg:flex"} />
         </div>
-      </nav>
+      </motion.nav>
     </header>
   );
 }
