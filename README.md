@@ -1,6 +1,6 @@
 ## Tecnologias 
 - React
-- TypeScript
+- Typescript
 - Tailwindcss / para los estilos
 - React-slick | slick-carousel / para crear los sliders de los productos
 
